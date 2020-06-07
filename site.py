@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, session, redirect, url_for, m
 from HmacToken import HmacToken, TokenPeriod
 
 app = Flask(__name__)
-app.secret_key = 'some secret key'
 
 users = [{
     'login' : 'admin',
