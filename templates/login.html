@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ZeroToken Login</title>
+    </head>
+    <body>
+        {% if error %}
+            {{error}}
+        {% endif %}
+        <form action="{{ url_for('auth') }}" method="POST">
+            <input name="login" />
+            <input name="pwd" type="password" />
+            <input type="submit" value="Log in" />
+        </form>
+    </body>
+</html>
